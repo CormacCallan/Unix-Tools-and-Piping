@@ -7,4 +7,5 @@ run-task-1:
 	cat valid_colours.txt
 	unlink valid_colours.txt
 
-
+task:
+	cat colours.txt | grep -x '.\{7,7\}' && cat colours.txt | grep -x '.\{9,9\}'
