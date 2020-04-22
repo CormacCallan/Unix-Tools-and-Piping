@@ -4,3 +4,5 @@ run-task-1:
 run-task-2:
 	cat access.log | cut -d " " -f 1 | sort -u | cat
 
+run-task-3:
+	grep -o -r "404"
