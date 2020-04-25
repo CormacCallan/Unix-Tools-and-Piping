@@ -1,25 +1,36 @@
 #include <stdio.h>
-
+#include <string.h>
 
 int main(int argc, char* argv[]){
 
-	printf("\n custom c programme hextodec\n");
+
+	//my original idea and attempt
+	//printf("\n custom c programme hextodec\n");
+
+	//for(int i = 1; i < argc; i++){
+
+		//long n = strtol(argv[i], NULL, 16);
+		//printf("%ld, ", n);
+
+	//}
 
 
-	//long n = strtol(argv[1], NULL, 16);
-	//printf("n=%ld\n", n);
+
+	char const* const fileName = argv[1];
+	FILE* file = fopen(fileName, "r");
+	char line[256];
+
+	while (fgets(line, sizeof(line), file)) {
+		long n = strtol(line, NULL, 16);
+		printf("%ld, ", n);
+
+  }
+
+	printf("\n");
+
+  fclose(file);
 
 
-	for(int i = 1; i < argc; i++){
 
-		long n = strtol(argv[i], NULL, 16);
-		printf("n=%ld\n", n);
-
-
-//		printf("%s", argv[i]);
-	//	printf("%s\n",argv[i]);
-
-	}
-
-  return 0;
+	return 0;
 }
