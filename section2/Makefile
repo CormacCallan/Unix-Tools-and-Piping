@@ -6,6 +6,11 @@ run-task-2:
 	gcc ../hextodec.c -o ../build/hextodec && ../build/hextodec rs.txt && unlink rs.txt
 
 
+test:
+
+
+
+
 
 
 
