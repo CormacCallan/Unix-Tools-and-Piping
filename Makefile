@@ -1,9 +1,9 @@
 
 compile: hextodec.c
-	gcc hextodec.c -o ./build/hextodec
+	gcc addalpha.c -o ./build/addalpha
 
-run: hextodec.c
-	./build/hextodec colours.txt
+run: addalpha.c
+	./build/addalpha colours.txt
 
 
 clean:
