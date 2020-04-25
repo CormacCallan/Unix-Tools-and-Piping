@@ -6,3 +6,6 @@ run-task-2:
 
 run-task-3:
 	grep -r "404" access.log | cut -d " " -f 4 | cat
+
+run-task-4:
+	grep -r "MSIE" access.log > access.ie.log
