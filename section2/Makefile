@@ -6,8 +6,5 @@ run-task-2:
 
 
 
-test:
-	gcc ../addalpha.c -o ../build/hextodec && cat colours.txt | grep -x '.\{7,7\}' > rs1.txt && ../build/addalpha rs1.txt > new.txt && cat colours.txt | grep -x '.\{9,9\}' >> new.txt
-
-
-
+run-task-3:
+	gcc ../addalpha.c -o ../build/hextodec && cat colours.txt | grep -x '.\{7,7\}' > rs1.txt && ../build/addalpha rs1.txt > rgba-colours.txt && cat colours.txt | grep -x '.\{9,9\}' >> rgba-colours.txt && unlink rs1.txt
