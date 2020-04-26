@@ -8,4 +8,8 @@ run-task-3:
 	curl https://www.dkit.ie --output dkit.html
 
 run-task-4:
+<<<<<<< HEAD
+	touch mangled.txt && (head -n1 && tail -n1) < dkit.html | tac && tr '<>' '[]' < dkit.html > mangled.txt               
+=======
 	touch mangled.txt && (head -n1 && tail -n1) < dkit.html | tac && tr '<>' '[]' < dkit.html > mangled.txt
+>>>>>>> origin/working
