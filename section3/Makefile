@@ -9,3 +9,7 @@ run-task-3:
 
 run-task-4:
 	grep -r "MSIE" access.log > access.ie.log
+
+task3:
+	gcc ../three.c -o ../build/three && ../build/three list.txt
+
