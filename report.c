@@ -40,7 +40,7 @@ int main(int argc, char* argv[]){
 	//		videosCount ++;
 
 		//	scanf(time, "%d", &procTimeV);
-			//videosSum = procTimeV + videosSum;
+		//	videosSum = procTimeV + videosSum;
 		//}
 
 	}
