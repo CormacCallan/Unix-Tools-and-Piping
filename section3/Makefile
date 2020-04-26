@@ -10,8 +10,5 @@ run-task-3:
 run-task-4:
 	grep -r "MSIE" access.log > access.ie.log
 
-task3:
-	gcc ../report.c -o ../build/report.c && ../build/three list.txt
-
 run-task-5:
 	cat access.log | cut -d " " -f 7,5 | egrep '\b([5-9]|[1-5][0-9]|60)\b' | tr '"' ' ' | cat > filteredList.txt
